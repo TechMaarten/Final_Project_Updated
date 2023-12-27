@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" style="..." href="banana1.css">
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="A website about our favorite fruits">
+    <title>Banana | Fruits</title>
+
+</head>
+<body>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<div id="proj2">
+    <!--Header starts here-->
+    <header>
+        <h1>Banana</h1>
+        <p><em>Yuhang's Favorite Fruit</em> </p>
+    </header>
+    <!--Header ends here-->
+
+    <div id="close">
+        <nav>
+            <ul>
+                <li><a href="teenysfinalprojecthome.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fruit1-final-peishu.html">Watermelon</a></li>
+                <li><a href="teenysfinalprojectfruit2.html">Maarten's Top Three</a></li>
+                <li><a href="banana.html">Banana</a></li>
+                <li><a href="durian.html">Durian</a></li>
+                <li><a href="interactive.html">What Kind of Fruit Are You?</a></li>
+                <li><a href="contact-final-peishu.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <label for="first">Banana!</label>
+                    <div class="content">
+                        <p>Banana is one of the most common fruit. But do you know about banana's nutrition?</p>
+                        <a  href="ourcredits.html#first-pic"><img src="src/b3.jpeg" alt="1st picture of Banana"></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="second">
+                    <label for="second">Nutrition facts</label>
+                    <div class="content">
+                        <p>The nutrition facts for 1 medium-sized banana (100 grams) are : </p>
+                        <p id="elements"></p>
+                        <script>
+                            new TypeIt("#elements", {
+                                strings: ["Calories: 89","Water: 75%","Protein: 1.1 g","Carbs: 22.8 g",
+                                    "Sugar: 12.2 g","Fiber: 2.6 g","Fat: 0.3 g"],
+                                speed: 50,
+                                waitUntilVisible:true,
+                            }).go();
+                        </script>
+                        <p>Also, bananas are a good source of several vitamins and minerals,such as potassium, vitamin B6, and vitamin C</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="accordion">
+                <li>
+                    <input type="radio" name="accordion" id="third">
+                    <label for="third">Video about banana</label>
+                    <div class="content">
+                        <p> Please look at the videos below to learn the benefits of banana.</p>
+                        <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/WmAFBmk6a58?si=gzHi1jO29WJl9rLf"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+<footer>
+    <p> All rights are reserved <a href ="ourcredits.html"> Credits</a> &#169; </p>
+</footer>
+</div>
+
+
+</body>
+</html>

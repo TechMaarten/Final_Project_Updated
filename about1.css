@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+#projhome {
+    position: relative;
+    text-align: center;
+}
+#projhome::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(src/fruit.jpg);
+    opacity: 0.2;
+}
+
+header {
+    background-color: rgb(176, 87, 141);
+    color: black;
+    padding-bottom: 1.5%;
+    padding-top: .5%;
+    text-align: center;
+    isolation: isolate;
+}
+#main-content {
+    color: black;
+    width: 90%;
+    align-items: center;
+    isolation: isolate;
+    padding:2%;
+    margin:auto;
+}
+img {
+    text-align: center;
+    width:40%;
+    border: 5px solid lightpink;
+    height:auto;
+}
+
+#game{
+    text-decoration: none;
+    border: 5px solid lightpink;
+    color:hotpink;
+    padding: 0 15vw;
+    font-size:calc(5px + 2vw);
+}
+#home, #about{
+    text-decoration: none;
+    color:hotpink;
+    font-size:calc(5px + 2vw);
+    padding:0 12vw;
+    margin: 1vh;
+    border: 5px solid lightpink;
+
+}
+
+ #contact, #credits {
+    text-decoration: none;
+    color:hotpink;
+    font-size:calc(5px + 2vw);
+    padding:0 11vw;
+    margin: 1vh;
+    border: 5px solid lightpink;
+}
+footer {
+    margin: 1vh 0;
+    padding: .1%;
+    background-color: rgb(176, 87, 141);
+    color: black;
+    isolation: isolate;
+}
+footer a {
+    color: black;
+}
+@media screen and (max-width: 750px) {
+    #main-context{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        text-align: center;
+    }
+
+}
